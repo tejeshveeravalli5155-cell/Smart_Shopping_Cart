@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Smart Shopping Cart</h1>
+    </header>
+
+    <main>
+
+        <!-- Search & Filter -->
+        <section class="controls">
+
+            <input
+                type="text"
+                id="search"
+                placeholder="Search Product..."
+            >
+
+            <select id="category">
+                <option value="All">All Categories</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Stationery">Stationery</option>
+                <option value="Accessories">Accessories</option>
+            </select>
+
+        </section>
+
+        <!-- Products -->
+        <section>
+
+            <h2>Products</h2>
+
+            <div id="products" class="product-container"></div>
+
+        </section>
+
+        <hr>
+
+        <!-- Shopping Cart -->
+        <section>
+
+            <h2>Shopping Cart</h2>
+
+            <div id="cart"></div>
+
+            <h3>Total Items :
+                <span id="totalItems">0</span>
+            </h3>
+
+            <h3>Total Price :
+                ₹<span id="totalPrice">0</span>
+            </h3>
+
+        </section>
+
+        <hr>
+
+        <!-- Coupon -->
+        <section>
+
+            <h2>Apply Coupon</h2>
+
+            <input
+                type="text"
+                id="coupon"
+                placeholder="Enter Coupon Code"
+            >
+
+            <button id="applyCoupon">
+                Apply Coupon
+            </button>
+
+            <p id="couponMessage"></p>
+
+        </section>
+
+        <hr>
+
+        <!-- Checkout -->
+        <section>
+
+            <h2>Checkout</h2>
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Enter Customer Name"
+            >
+
+            <button id="checkout">
+                Checkout
+            </button>
+
+        </section>
+
+        <hr>
+
+        <!-- Invoice -->
+        <section>
+
+            <h2>Invoice</h2>
+
+            <div id="invoice"></div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
